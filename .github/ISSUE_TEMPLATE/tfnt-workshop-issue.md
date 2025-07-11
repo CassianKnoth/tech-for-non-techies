@@ -1,7 +1,7 @@
 ---
 name: TFNT-Workshop Issue
 about: Template for an issue reagerding the TFNT-workshop project
-title: ''
+title: "[x SP] (issueType) Issue Title"
 labels: ''
 assignees: ''
 

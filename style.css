@@ -12,6 +12,44 @@
     --spacer-sm: 12px;
     --spacer-md: 16px;
     --spacer-lg: 20px;
+
+  
+  
+  /* 
+  Should it be called space or size? space or spacing would be semantically favourable, due it being a 4px grid spacing system.
+  the system mainly talks about space, but due to size being more generic it would also fit more generic use cases, you could 
+  use it for font "size", space "size" like padding or margin, but also for the "size" of the border radius.
+
+  also space-12 vs space-sm? using numbers is more precise and due to the setup with grid-base it removes the speculation of
+  how high the value of px is. While using sm, md, lg is semantically more favourable.
+  */
+
+  --grid-base: 4px;
+
+  --space-4: calc(var(--grid-base) * 1);
+  --space-8: calc(var(--grid-base) * 2);
+  --space-12: calc(var(--grid-base) * 3);
+  --space-16: calc(var(--grid-base) * 4);
+  --space-20: calc(var(--grid-base) * 5);
+  --space-24: calc(var(--grid-base) * 6);
+  --space-28: calc(var(--grid-base) * 7);
+  --space-32: calc(var(--grid-base) * 8);
+  --space-36: calc(var(--grid-base) * 9); 
+  --space-40: calc(var(--grid-base) * 10);
+  --space-48: calc(var(--grid-base) * 12);
+  --space-64: calc(var(--grid-base) * 16);
+  --space-80: calc(var(--grid-base) * 20);
+  --space-96: calc(var(--grid-base) * 24);
+  --space-128: calc(var(--grid-base) * 32);
+
+  --space-2xs: var(--space-4);
+  --space-xs: var(--space-8);
+  --space-sm: var(--space-12);
+  --space-md: var(--space-16);
+  --space-lg: var(--space-24);
+  --space-xl: var(--space-32);
+  --space-2xl: var(--space-64);
+  --space-3xl: var(--space-96);
 }
 
 header {

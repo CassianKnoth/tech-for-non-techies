@@ -2,8 +2,11 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-size: 18px;
 	font-family: 'Mulish', sans-serif;
+	font-size: 18px;
+	line-height: 2;
+	font-weight: bold;
+	color: var(--accent);
 }
 
 :root {
@@ -88,10 +91,10 @@ section {
 
 .stage {
 	position: relative;
-	width: 100%;
+	width: 70vw;
 }
 .stage-image {
-	width: 70vw;
+	width: 100%;
 	box-shadow: 25px 25px 0px 0px #dee9da;
 	border-radius: 6px;
 }
@@ -99,9 +102,11 @@ section {
 .stage-caption {
 	position: absolute;
 	bottom: 25%;
-	right: 15%;
-	padding: 20px;
-	font-size: 78px;
+	right: -10%;
+	padding: var(--size-20) var(--size-40);
+	font-size: var(--size-128);
+	line-height: 1;
+	font-weight: bold;
 	background: white;
 	box-shadow: 10px 10px 0px 0px;
 	border-radius: 6px;
@@ -115,12 +120,12 @@ section {
 }
 
 .welcome-section__headline {
-	font-size: var(--size-64)px;
+	font-size: var(--size-64) px;
 }
 
 .welcome-section__copy {
-	font-size: var(--size-18)px;
-	line-height: var(--size-36)px;
+	font-size: var(--size-18) px;
+	line-height: var(--size-36) px;
 }
 
 .article-section {
@@ -128,7 +133,7 @@ section {
 }
 
 .article-section__headline {
-	font-size: var(--size-36)px;
+	font-size: var(--size-36) px;
 	font-weight: 600;
 }
 .article-section__teaser-grid {
@@ -149,12 +154,12 @@ section {
 }
 
 .teaser-card__headline {
-	font-size: var(--size-24)px;
+	font-size: var(--size-24) px;
 	width: 75%;
 }
 
 .teaser-card__length {
-	font-size: var(--size-16)px;
+	font-size: var(--size-16) px;
 }
 
 .teaser-card__details {
@@ -200,8 +205,11 @@ section {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	padding: 48px var(--page-padding-desktop);
-	border-radius: var(--size-12) var(--size-12) 0 0 ;
+	border-radius: var(--size-12) var(--size-12) 0 0;
 	background-color: var(--accent);
+}
+
+.footer * {
 	color: var(--text-color-on-dark);
 }
 
@@ -218,7 +226,6 @@ section {
 }
 
 .imprint__address {
-
 	line-height: var(--size-36);
 	font-style: normal;
 }
